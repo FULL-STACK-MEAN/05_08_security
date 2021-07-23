@@ -171,3 +171,10 @@ Si, pero deberá tener el role changeOwnPasswDataRole
 ## Eliminación de usuario
 
 Elíminar el registro desde la colección system.users
+
+## Particularidad en la creación de usuarios en MongoDB
+
+Como los usuarios se crean a nivel de base de datos podríamos tener un mismo nombre
+de usuario en diferentes bases de datos. No sería buena práctica porque puede inducir
+a error, sería mejor extender el usuario con los roles necesarios en varias bases de
+datos (ver 02_rbac.md)
